@@ -1,0 +1,35 @@
+# Указываем, что это корневой файл конфигурации
+root = true
+
+# Общие настройки для всех файлов
+[*]
+indent_style = space             # Использовать пробелы для отступов
+indent_size = 2                  # Размер отступа - 2 пробела (стандарт для JavaScript/TypeScript)
+end_of_line = lf                 # Символ конца строки - LF (Linux/MacOS)
+charset = utf-8                  # Кодировка UTF-8
+trim_trailing_whitespace = true  # Удалять пробелы в конце строк
+insert_final_newline = true      # Добавлять новую строку в конце файла
+
+# Настройки для файлов JavaScript и TypeScript
+[*.{js,jsx,ts,tsx}]
+indent_style = space             # Пробелы для отступов
+indent_size = 2                  # Размер отступа - 2 пробела
+
+# Настройки для JSON файлов
+[*.json]
+indent_style = space             # Пробелы для отступов
+indent_size = 2                  # Размер отступа - 2 пробела
+
+# Настройки для файлов Markdown
+[*.md]
+trim_trailing_whitespace = false # Оставляем пробелы в конце строк для форматирования Markdown
+
+# Настройки для YAML файлов (например, .yml или .yaml)
+[*.{yml,yaml}]
+indent_style = space             # Пробелы для отступов
+indent_size = 2                  # Размер отступа - 2 пробела
+
+# Настройки для файлов конфигурации (например, .eslintrc, .prettierrc)
+[*.{rc}]
+indent_style = space             # Пробелы для отступов
+indent_size = 2                  # Размер отступа - 2 пробела
